@@ -14,11 +14,11 @@ document.getElementById("login-btn").addEventListener("click", function() {
     //3- march pin & mobile number
         if (contactNumber == "01518750179" && pin == "1234"){
 
-        //     //4- if match show success alert
+            //3-1 if match show success alert
             alert("Login successful!");
             window.location.assign("home.html");
         } else {
-        //     //5- if not match show error alert
+            //3-2 if not match show error alert
             alert("Invalid mobile number or pin. Please try again.");
         }
 });
