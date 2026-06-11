@@ -25,7 +25,18 @@ console.log("new balance", newBalance)
         return;
     }
     
-    //5- Get
+    //5- Get the pin and verify
+    const cashoutPinInput = document.getElementById("cashout-pin");
+    const pin = cashoutPinInput.value;
+    if (pin === "1234") {
+        //5-1 true:: show an alert > set Balance
+        alert("Cashout Successfull");
+        console.log("new balance", newBalance);
+    }
+    else {
+        //5-2 true:: show an error alert > return
+        alert("Invalid Pin")
+    }
 
     // //1- get the agent number input
     //  const numberInput = document.getElementById("agent-number");
